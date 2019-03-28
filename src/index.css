@@ -14,7 +14,7 @@ code {
 }
 
 #background-header {
-  height: 99.7vh;
+  /* height: 99.7vh; */
   width: 99.99vw;
   overflow-x: hidden;
   z-index: 0;
@@ -43,4 +43,96 @@ code {
   height: 40vh;
   background-color: brown;
   overflow-x: hidden;
+}
+
+#learn-more {
+  z-index: 10;
+  position: absolute;
+  top: 60vh;
+  left: 32.5vw;
+  width: 35vw;
+  height: 30vh;
+  background-color: brown;
+  overflow-x: hidden;
+}
+
+#create-account {
+  width: 60vw;
+  margin: 10vh auto;
+}
+
+#create-account-text {
+  font-size: 2vw;
+  text-align: center;
+}
+
+#create-account-button {
+  background-color: #7172d8;
+  color: white;
+  padding: 20px;
+  border-radius: 1vw;
+  margin: 5vh auto 4vh;
+  font-size: 1.8vw;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 50vw;
+  margin: 0 auto;
+  /* background-color: #7172d8; */
+}
+.grid-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /* background-color: orange; */
+
+}
+
+.grid-item {
+  background-color: #e4e4e4;
+  margin: 15px;
+  height: 10vw;
+  /* flex-basis: 20%; */
+  -ms-flex: auto;
+  width: 22vw;
+  position: relative;
+  padding: 10px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 2px solid #c2c1c1;
+}
+
+.grid-content {
+  margin-left: 0;
+  padding: 5% 0;
+}
+
+.grid-image {
+  margin-left: 0;
+  float: left;
+  width: 6vw;
+  height: 6vw;
+  background-color: grey;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+}
+
+.grid-text-container {
+  float: right;
+  width: 14vw;
+}
+
+.grid-text-header {
+  height: 1.2vw;
+  overflow: hidden;
+  font-weight: bold;
+  text-align: left;
+}
+
+.grid-text-content {
+  height: 4.8vw;
+  text-align: left;
+  overflow: hidden;
 }
