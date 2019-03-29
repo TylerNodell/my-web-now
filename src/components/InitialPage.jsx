@@ -8,11 +8,11 @@ import LearnMore from './LearnMore'
 export default class InitialPage extends Component {
   render() {
     return (
-      <div style={{zIndex: '0',overflowX: 'hidden'}}>
+      <div>
         <Header />
         <Content />
         <LearnMore />
-        <img src={BackgroundImage} alt="Background Photoshop" id="background-header"/>
+        {/* <img src={BackgroundImage} alt="Background Photoshop" id="background-header"/> */}
       </div>
     )
   }
