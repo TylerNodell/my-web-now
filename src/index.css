@@ -12,6 +12,13 @@ body {
   background-position: center center; */
 }
 
+@font-face {
+  font-family: 'Avenir Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 85 Heavy'), url('./fonts/AvenirLTStd-Heavy.woff') format('woff');
+  }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -39,30 +46,33 @@ code {
 }
 
 #topbar-one {
-  float: left; 
+  float: right; 
   font-size: 1.5vw;
+  margin: 1.5vw 2vw;
 }
 
 #topbar-one > text {
   margin: 0 1vw;
+  float:right;
 }
 
 #topbar-two {
   float: right;
   font-size: 1.5vw;
+  margin: 1.35vw 0vw;
 }
 
 #topbar-two > text, #topbar-two > button{
-  margin: 0 1vw;
+  margin: 0 .5vw;
 }
 
 #support-button {
   background-color: #81d398;
   border-color: #81d398;
-  border-radius: 5px;
-  font-size: 1.5vw;
+  border-radius: 2px;
+  font-size: 1.2vw;
   /* height: 2vw; */
-  padding: 0 1vw;
+  padding: .2vw 1vw;
   color: white;
 }
 
@@ -75,7 +85,11 @@ code {
   width: 40vw;
   height: 17vw;
   /* background-color: brown; */
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+span {
+  color: #81d398;
 }
 
 #tagline {
@@ -90,10 +104,10 @@ code {
   resize: none;
   float: left;
   margin: 3vw 1vw;
-  height: 1.5vw;
+  height: 1.3vw;
   width: 23vw;
   color: grey;
-  padding: 1vw 1.5vw;
+  padding: 1.8vw 1.5vw;
   font-size: 1.3vw;
 }
 
@@ -107,13 +121,13 @@ textarea:focus, input:focus{
   border-radius: 5px;
   border: transparent;
   margin: 2.9vw auto;
-  height: 3.8vw;
+  height: 5.35vw;
   width: 9vw;
   font-size: 1.5vw;
 }
 
 #learn-more {
-  margin: 9.6vw auto;
+  margin: 9.6vw auto 4vw;
   width: 35vw;
   height: 10vw;
   /* background-color: brown; */
@@ -143,74 +157,87 @@ textarea:focus, input:focus{
 
 #create-account {
   width: 60vw;
-  margin: 10vh auto;
+  height: 12vw;
+  margin: 4vw auto 8vw;
+  /* background-color: green; */
 }
 
 #create-account-text {
-  font-size: 2vw;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  color: rgb(113, 113, 113);
   text-align: center;
+  height: 8vw;
+  overflow: hidden;
 }
 
 #create-account-button {
   background-color: #7172d8;
   color: white;
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: 1vw;
-  margin: 5vh auto 4vh;
-  font-size: 1.8vw;
-  max-width: 100%;
+  margin: 1.2vw auto 0vh;
+  font-size: 1.4vw;
+  height: 4vw;
+  width: 22vw;
+  /* max-width: 100%; */
 }
 
 .container {
-  width: 80vw;
-  margin: auto;
+  width: 86vw;
+  margin: 0vw auto;
   /* background-color: #7172d8; */
 }
 .grid-row {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: wrap;
   justify-content: center;
+  margin: auto;
   /* background-color: orange; */
 
 }
 
 .grid-item {
-  background-color: #e4e4e4;
-  margin: 15px;
-  height: 15vw;
+  background-color: #fcfcfc;
+  margin: 1vw;
+  height: 12vw;
   /* flex-basis: 20%; */
   /* -ms-flex: auto; */
   width: 38vw;
   position: relative;
-  padding: 10px 0;
+  padding: 1vw 0;
   box-sizing: border-box;
   border-radius: 5px;
-  border: 2px solid #c2c1c1;
+  border: 1px solid #e8e8e8;
 }
 
 .grid-content {
   margin-left: 0;
-  padding: 5% 0;
+  padding-bottom: 2vw;
 }
 
 .grid-image {
   margin-left: 0;
   float: left;
-  width: 10vw;
-  height: 10vw;
+  width: 9vw;
+  height: 9vw;
   background-color: grey;
   border-radius: 5px;
   color: white;
   text-align: center;
+  font-size: 3vw
 }
 
 .grid-text-container {
   float: right;
-  width: 27vw;
+  width: 24vw;
+  margin: 0 1vw;
 }
 
 .grid-text-header {
   height: 2vw;
+  font-size: 1.8vw;
+  margin: .3vw 0;
   width: 50%;
   overflow: hidden;
   font-weight: bold;
@@ -218,23 +245,24 @@ textarea:focus, input:focus{
 }
 
 .grid-text-content {
-  height: 8vw;
+  height: 6vw;
   text-align: left;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 #line {
   background-color: darkblue;
   height: .25vw;
   border-radius: 2px;
-  margin: .5vw auto 1.5vw;
+  margin: .25vw auto .8vw;
   width: 7vw;
 }
 
 #ready {
   width: 77vw;
   margin: 2vw auto;
-  height: 15vw;
+  height: 8.81vw;
+  padding: 0vw 0;
   /* background-color: grey; */
 }
 
@@ -242,32 +270,52 @@ textarea:focus, input:focus{
   height: 5vw;
   float: left;
   text-align: left;
-  margin: 6vw 0;
+  margin: 3vw 0;
   width: 30vw;
 }
 
 #ready-buttons {
   float: right;
-  margin: 6vw 2vw;
+  margin: 3.5vw 0vw;
+  width: 26vw;
+  text-align: center;
+
 }
 
 
 .rbutton {
   border-radius: 5px;
-  height: 3vw;
+  height: 2vw;
   width: 15vw;
-  font-size: 1vw
+  font-size: .9vw;
+  padding-top: 1vw;
+  display: inline-block;
+  /* right: 15vw; */
+  /* position: absolute; */
 }
 
 #create {
   background-color: #7058db;
   color: white;
+  float: left;
   border-color: #7058db;
-  margin: 1vw;
+  margin: 0 0vw;
+}
+
+#contact {
+  float: right;
+  width: 10vw;
+  border: solid 1px #d7d7d7;
+}
+
+#footer-container {
+  width: 90vw;
+  height: 25.58vw;
+  margin: 0vw auto;
 }
 
 .footer-row {
-  display: flex;
+  display: inline-flex;
   flex-flow: nowrap;
   justify-content: center;
   /* background-color: orange; */
@@ -275,20 +323,90 @@ textarea:focus, input:focus{
 }
 
 .flex-footer-item {
-  background-color: #e4e4e4;
-  margin: 15px;
-  height: 25vw;
+  /* background-color: #eb0000; */
+  margin: 4vw;
+  height: 20vw;
   /* flex-basis: 20%; */
   -ms-flex: auto;
-  width: 15vw;
+  /* width: 18vw; */
   position: relative;
   padding: 10px 0;
   box-sizing: border-box;
-  border-radius: 5px;
-  border: 2px solid #c2c1c1;
+}
+
+.icons {
+  float: left;
+  width: 1.5vw;
+  height: 18vw;
+  margin: 1vw 0;
+}
+#contact-info {
+  margin-left: 3vw;
+}
+
+#contact-info > div {
+  font-size: 1vw;
+  text-align: left;
+  color: rgb(230, 230, 230);
+}
+
+.footer-main {
+  text-align: left;
+  font-size: 1vw;
+}
+
+.footer-main > div {
+  margin: 1.5vw 0;
+  color: rgb(230, 230, 230);
+}
+
+.footer-first {
+  margin: 1vw 0 !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+.footer-thumbnail {
+  width: 1.5vw;
+  height: 1.5vw;
+}
+
+.footer-social-media {
+  width: 2vw;
+  height: 2vw;
+  margin-bottom: 1vw;
 }
 
 h1 {
   font-size: 3vw;
+  font-family: "Avenir Heavy";
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  #create-account-text {
+    font-size: 1.3vw;
+    color: rgb(113, 113, 113);
+    text-align: center;
+    height: 7vw;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #create-account-button {
+    background-color: #7172d8;
+    color: white;
+    /* padding: 20px; */
+    border-radius: 1vw;
+    margin: .8vw auto 0vw;
+    font-size: 1.3vw;
+    height: 4vw;
+    width: 22vw;
+    /* max-width: 100%; */
+  }
+
+  #create {
+    font-size: .7vw;
+  }
 }

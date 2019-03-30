@@ -11,7 +11,7 @@ export default class InitialContent extends Component {
     return (
       <div id="content">
         <div id='tagline'>
-          <h1>Get a website in <br/> 15 minutes or less</h1>
+          <h1>Get a website in <br/> 15 minutes <span>or less</span></h1>
         </div>
         <div>
           {/* <input type="text" name="name" id="text-input"/> */}

@@ -4,11 +4,11 @@ import GridContent from './GridContent';
 export default class OurServices extends Component {
   render() {
     const textHeader = {
-      fontSize: '3vw'
+      fontSize: '2.3vw'
     }
     return (
       <div style={{margin: "auto"}}>
-        <text style={textHeader} >Our Services</text>
+        <div style={textHeader} >Our Services</div>
         <div id='line'></div>
         <div className="container">
           <div className="grid-row">

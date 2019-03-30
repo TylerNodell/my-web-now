@@ -9,8 +9,8 @@ export default class AreYouReady extends Component {
           Are you ready? <br/> <strong>Create an account, or contact us.</strong>
         </Textfit>
         <div id="ready-buttons">
-          <button className='rbutton' id="create">CREATE YOUR ACCOUNT</button>
-          <button className='rbutton' id="contact">CONTACT US</button>
+            <div className='rbutton' id="create">CREATE YOUR ACCOUNT</div>
+            <div className='rbutton' id="contact">CONTACT US</div>
         </div>
       </div>
     )
