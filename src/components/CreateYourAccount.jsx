@@ -13,7 +13,7 @@ export default class CreateYourAccount extends Component {
           </div>
         </div>
         <div>
-          <button id="create-account-button"><Textfit mode="single">CREATE YOUR ACCOUNT</Textfit></button>
+          <button id="create-account-button"><Textfit mode="single"><strong>CREATE YOUR ACCOUNT</strong></Textfit></button>
         </div>
       </div>
     )

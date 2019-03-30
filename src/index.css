@@ -300,6 +300,7 @@ textarea:focus, input:focus{
   float: left;
   border-color: #7058db;
   margin: 0 0vw;
+  font-size: 1vw;
 }
 
 #contact {
